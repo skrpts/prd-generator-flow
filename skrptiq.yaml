@@ -1,0 +1,38 @@
+name: "prd-generator-flow"
+display_name: "PRD Generator Flow"
+description: "Full product requirements document generation with stakeholder context, success metrics, and technical constraints"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/prd-generator-flow"
+
+category: "product-manager"
+tags:
+  - "prd"
+  - "product-requirements"
+  - "stakeholder-analysis"
+  - "technical-scoping"
+  - "product-management"
+
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling:
+    - "product-requirements"
+    - "user-research"
+    - "technical-specifications"
+
+contents:
+  skills: 3
+  prompts: 6
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 2
+  assets: 2
+  total: 16
