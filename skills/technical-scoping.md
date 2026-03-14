@@ -5,7 +5,7 @@ title: Technical Scoping
 description: "Assessing technical feasibility, identifying constraints, dependencies, and architectural implications"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: prd-reference-guide
     type: references

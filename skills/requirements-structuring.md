@@ -5,7 +5,7 @@ title: Requirements Structuring
 description: "Organising raw requirements into structured, hierarchical format with clear categorisation and traceability"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: prd-reference-guide
     type: references

@@ -23,7 +23,7 @@ connections:
     type: uses
   - target: prd-assembler
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: prd-reference-guide
     type: references
@@ -128,3 +128,53 @@ This workflow produces a comprehensive product requirements document (PRD) from 
 - **Requirements scope explosion:** If more than 30 requirements are generated, recommend splitting into multiple PRDs or phasing the initiative.
 - **Unmeasurable metrics:** If success metrics cannot be measured with existing tooling, include a "metrics infrastructure" requirement in the PRD.
 - **Technical blocker:** If technical scoping reveals a fundamental feasibility issue, halt PRD generation and recommend a technical spike before proceeding.
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.initiative_description}}` | Yes | The product opportunity, customer request, or strategic initiative | "Users are churning because onboarding takes too long — 60% drop off before completing setup" |
+| `{{input.customer_evidence}}` | No | Customer quotes, survey data, or usage metrics supporting the initiative | "NPS comments from Q1: 'Setup was confusing', 'I gave up after 10 minutes'" |
+| `{{input.business_context}}` | No | Strategic context, OKRs, or business objectives this initiative serves | "Q2 OKR: Reduce onboarding drop-off from 60% to 30%" |
+| `{{input.technical_context}}` | No | Existing architecture, systems, or constraints the team should be aware of | "Current onboarding is a 12-step wizard backed by a legacy API" |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Complete PRD document | A structured requirements document with problem statement, personas, requirements (functional + non-functional), success metrics, technical constraints, timeline, and sign-off section |
+| Stakeholder sign-off section | List of stakeholders with roles and approval status |
+| Glossary | Domain-specific terms defined for the initiative |
+
+The output follows the PRD template included in this skrpt (`assets/prd-template.md`).
+
+## Setup
+
+Before running this workflow:
+
+1. **No external services required** — this workflow runs entirely on your configured LLM provider.
+2. **Gather your inputs** — the more context you provide (customer evidence, business objectives, technical constraints), the better the PRD. At minimum you need the initiative description.
+3. **Review the templates** — check `assets/prd-template.md` and `assets/persona-card-template.md` to understand the output format. Customise them to match your team's PRD standards if needed.
+
+## Provider Notes
+
+- The PRD assembly stage (Stage 6) is the most token-intensive — it needs to synthesise all previous outputs into a single document. A model with a large context window works best here.
+- Requirements elicitation and technical scoping benefit from strong analytical reasoning.
+- Persona generation and problem statement writing benefit from creative, natural language generation.
+- The full pipeline uses approximately 22,000 tokens across all stages.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Initiative: "Our mobile app has no offline mode. Users in areas with poor connectivity
+can't access their data, and we're losing enterprise customers who need field workers
+to use the app in warehouses and remote sites."
+
+Customer evidence: "Three enterprise prospects cited offline as a deal-breaker in Q1.
+Support tickets about connectivity issues up 40% since expanding to manufacturing sector."
+
+Business context: "Enterprise segment is our fastest-growing revenue source.
+Offline mode is the #1 requested feature in our product feedback board."
+```

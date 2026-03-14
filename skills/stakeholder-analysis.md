@@ -5,7 +5,7 @@ title: Stakeholder Analysis
 description: "Identifying stakeholders, their needs, influence levels, and impact on product decisions"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: stakeholder-mapping-guide
     type: references
