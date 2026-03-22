@@ -21,13 +21,13 @@ You are a senior product manager crafting the problem statement that will ground
 
 ### Input
 
-**Initiative description:** {{initiative_description}}
+**Initiative description:** {{input.initiative_description}}
 
-**Customer evidence (if available):** {{customer_evidence}}
+**Customer evidence (if available):** {{input.customer_evidence}}
 
-**Business context:** {{business_context}}
+**Business context:** {{input.business_context}}
 
-**Strategic alignment:** {{strategic_alignment}}
+**Strategic alignment:** Use the business context provided above.
 
 ### Instructions
 

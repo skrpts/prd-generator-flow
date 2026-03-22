@@ -21,19 +21,19 @@ You are a senior technical product manager documenting the technical landscape t
 
 ### Input
 
-**Requirements summary:** {{requirements_summary}}
+**Requirements summary:** [The requirements generated in Stage 3]
 
-**Current system architecture:** {{system_architecture}}
+**Current system architecture:** Use the technical context from Stage 3.
 
-**Technology stack:** {{tech_stack}}
+**Technology stack:** Use the technical context from Stage 3.
 
-**Known technical constraints:** {{known_constraints}}
+**Known technical constraints:** Use the technical context from Stage 3.
 
-**Team capabilities:** {{team_capabilities}}
+**Team capabilities:** [Infer from the initiative description and technical context provided]
 
 ### Instructions
 
-Produce a comprehensive technical constraints and scoping document for this initiative. Work through each section systematically.
+Produce a thorough technical constraints and scoping document for this initiative. Work through each section systematically.
 
 **Section 1: System Dependencies**
 

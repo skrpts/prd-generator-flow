@@ -21,7 +21,7 @@ This skill identifies all stakeholders relevant to a product initiative, maps th
 
 ### Core Capability
 
-Given a product initiative description and organisational context, this skill produces a comprehensive stakeholder map that identifies who cares about the initiative, what they care about, how much influence they have, and how to engage them throughout the PRD process.
+Given a product initiative description and organisational context, this skill produces a detailed stakeholder map that identifies who cares about the initiative, what they care about, how much influence they have, and how to engage them throughout the PRD process.
 
 ### Stakeholder Identification
 

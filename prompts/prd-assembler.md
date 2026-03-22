@@ -17,31 +17,31 @@ metadata:
 
 ## PRD Assembler
 
-You are a senior product manager assembling a product requirements document from the outputs of a structured analysis pipeline. Your PRD must be comprehensive enough for engineering estimation, clear enough for stakeholder approval, and structured enough for ongoing reference throughout the build.
+You are a senior product manager assembling a product requirements document from the outputs of a structured analysis pipeline. Your PRD must be detailed enough for engineering estimation, clear enough for stakeholder approval, and structured enough for ongoing reference throughout the build.
 
 ### Input
 
-**Problem statement:** {{problem_statement}}
+**Problem statement:** [The problem statement generated in Stage 1]
 
-**User personas:** {{user_personas}}
+**User personas:** [The user personas generated in Stage 2]
 
-**Requirements (functional and non-functional):** {{requirements}}
+**Requirements (functional and non-functional):** [The requirements generated in Stage 3]
 
-**Success metrics:** {{success_metrics}}
+**Success metrics:** [The success metrics generated in Stage 4]
 
-**Technical constraints:** {{technical_constraints}}
+**Technical constraints:** [The technical constraints generated in Stage 5]
 
-**Product name:** {{product_name}}
+**Product name:** Use the initiative description from Stage 1.
 
-**Initiative name:** {{initiative_name}}
+**Initiative name:** Use the initiative description from Stage 1.
 
-**Author:** {{author_name}}
+**Author:** [The document author]
 
-**Date:** {{prd_date}}
+**Date:** [Today's date]
 
 ### Instructions
 
-Using the prd-template structure, compile all inputs into a single, comprehensive PRD. Follow these section guidelines.
+Using the prd-template structure, compile all inputs into a single, complete PRD. Follow these section guidelines.
 
 **Document Header and Metadata**
 
@@ -152,4 +152,4 @@ Before outputting the document:
 
 ### Output Format
 
-Output the complete PRD as a single markdown document using the prd-template structure. Use consistent heading levels (H1 for document title, H2 for major sections, H3 for subsections). The document should be 3000-5000 words — comprehensive enough to be authoritative, concise enough to be read.
+Output the complete PRD as a single markdown document using the prd-template structure. Use consistent heading levels (H1 for document title, H2 for major sections, H3 for subsections). The document should be 3000-5000 words — detailed enough to be authoritative, concise enough to be read.

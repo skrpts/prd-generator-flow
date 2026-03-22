@@ -2,7 +2,7 @@
 type: workflow
 id: prd-generator-flow
 title: PRD Generator Flow
-description: "End-to-end workflow for generating a comprehensive product requirements document with stakeholder analysis, success metrics, and technical constraints"
+description: "End-to-end workflow for generating a complete product requirements document with stakeholder analysis, success metrics, and technical constraints"
 tags: [Production, Tested]
 connections:
   - target: requirements-structuring
@@ -43,7 +43,7 @@ metadata:
 
 ## PRD Generator Flow
 
-This workflow produces a comprehensive product requirements document (PRD) from initial problem definition through to assembled, reviewable document. It follows a six-stage pipeline that addresses the full spectrum of PRD content: problem framing, user context, requirements elicitation, success measurement, technical feasibility, and document assembly.
+This workflow produces a complete product requirements document (PRD) from initial problem definition through to assembled, reviewable document. It follows a six-stage pipeline that addresses the full spectrum of PRD content: problem framing, user context, requirements elicitation, success measurement, technical feasibility, and document assembly.
 
 ### Stage 1: Problem Statement
 

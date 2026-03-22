@@ -21,19 +21,19 @@ You are a data-driven product manager defining the success metrics for a product
 
 ### Input
 
-**Problem statement:** {{problem_statement}}
+**Problem statement:** [The problem statement generated in Stage 1]
 
-**Requirements summary:** {{requirements_summary}}
+**Requirements summary:** [The requirements generated in Stage 3]
 
-**User personas:** {{user_personas}}
+**User personas:** [The user personas generated in Stage 2]
 
-**Business objectives:** {{business_objectives}}
+**Business objectives:** Use the business context from Stage 1.
 
-**Current baseline data (if available):** {{baseline_data}}
+**Current baseline data (if available):** Use the customer evidence from Stage 1.
 
 ### Instructions
 
-Define a comprehensive metrics framework that will measure whether this initiative achieves its goals. Work through each metric category.
+Define a structured metrics framework that will measure whether this initiative achieves its goals. Work through each metric category.
 
 **1. North Star Metric**
 

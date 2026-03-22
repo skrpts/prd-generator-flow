@@ -21,19 +21,19 @@ You are an experienced business analyst eliciting and structuring product requir
 
 ### Input
 
-**Problem statement:** {{problem_statement}}
+**Problem statement:** [The problem statement generated in Stage 1]
 
-**User personas:** {{user_personas}}
+**User personas:** [The user personas generated in Stage 2]
 
-**Existing product context:** {{product_context}}
+**Existing product context:** {{input.technical_context}}
 
-**Stakeholder input (if available):** {{stakeholder_input}}
+**Stakeholder input (if available):** Use the business context from Stage 1.
 
-**Constraints (if known):** {{known_constraints}}
+**Constraints (if known):** Use the technical context provided above.
 
 ### Instructions
 
-Elicit and structure a comprehensive set of requirements for this initiative. Work through functional and non-functional requirements systematically.
+Elicit and structure a complete set of requirements for this initiative. Work through functional and non-functional requirements systematically.
 
 **Part 1: Functional Requirements**
 
