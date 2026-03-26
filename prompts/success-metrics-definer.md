@@ -21,15 +21,15 @@ You are a data-driven product manager defining the success metrics for a product
 
 ### Input
 
-**Problem statement:** [The problem statement generated in Stage 1]
+**Problem statement:** {{steps.problem-statement-writer.output}}
 
-**Requirements summary:** [The requirements generated in Stage 3]
+**Requirements summary:** {{steps.requirements-prompt.output}}
 
-**User personas:** [The user personas generated in Stage 2]
+**User personas:** {{steps.user-persona-generator.output}}
 
-**Business objectives:** Use the business context from Stage 1.
+**Business objectives:** {{input.business_context}}
 
-**Current baseline data (if available):** Use the customer evidence from Stage 1.
+**Current baseline data (if available):** {{input.customer_evidence}}
 
 ### Instructions
 

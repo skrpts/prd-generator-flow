@@ -21,19 +21,19 @@ You are a senior product manager assembling a product requirements document from
 
 ### Input
 
-**Problem statement:** [The problem statement generated in Stage 1]
+**Problem statement:** {{steps.problem-statement-writer.output}}
 
-**User personas:** [The user personas generated in Stage 2]
+**User personas:** {{steps.user-persona-generator.output}}
 
-**Requirements (functional and non-functional):** [The requirements generated in Stage 3]
+**Requirements (functional and non-functional):** {{steps.requirements-prompt.output}}
 
-**Success metrics:** [The success metrics generated in Stage 4]
+**Success metrics:** {{steps.success-metrics-definer.output}}
 
-**Technical constraints:** [The technical constraints generated in Stage 5]
+**Technical constraints:** {{steps.technical-constraints-prompt.output}}
 
-**Product name:** Use the initiative description from Stage 1.
+**Product name:** {{input.initiative_description}}
 
-**Initiative name:** Use the initiative description from Stage 1.
+**Initiative name:** {{input.initiative_description}}
 
 **Author:** [The document author]
 

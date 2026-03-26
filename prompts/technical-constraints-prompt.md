@@ -21,15 +21,15 @@ You are a senior technical product manager documenting the technical landscape t
 
 ### Input
 
-**Requirements summary:** [The requirements generated in Stage 3]
+**Requirements summary:** {{steps.requirements-prompt.output}}
 
-**Current system architecture:** Use the technical context from Stage 3.
+**Current system architecture:** {{input.technical_context}}
 
-**Technology stack:** Use the technical context from Stage 3.
+**Technology stack:** {{input.technical_context}}
 
-**Known technical constraints:** Use the technical context from Stage 3.
+**Known technical constraints:** {{input.technical_context}}
 
-**Team capabilities:** [Infer from the initiative description and technical context provided]
+**Team capabilities:** Infer from {{input.initiative_description}} and {{input.technical_context}}.
 
 ### Instructions
 

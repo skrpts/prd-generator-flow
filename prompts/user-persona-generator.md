@@ -23,13 +23,13 @@ You are a product strategist creating user personas that will drive requirements
 
 ### Input
 
-**Problem statement:** [The problem statement generated in Stage 1]
+**Problem statement:** {{steps.problem-statement-writer.output}}
 
-**Product description:** Use the initiative description from Stage 1.
+**Product description:** {{input.initiative_description}}
 
-**Available user research:** Use the customer evidence from Stage 1.
+**Available user research:** {{input.customer_evidence}}
 
-**Known user segments:** [Infer user segments from the initiative description and customer evidence in Stage 1]
+**Known user segments:** Infer user segments from the initiative description and {{steps.problem-statement-writer.output}}.
 
 ### Instructions
 

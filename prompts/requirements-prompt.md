@@ -21,15 +21,15 @@ You are an experienced business analyst eliciting and structuring product requir
 
 ### Input
 
-**Problem statement:** [The problem statement generated in Stage 1]
+**Problem statement:** {{steps.problem-statement-writer.output}}
 
-**User personas:** [The user personas generated in Stage 2]
+**User personas:** {{steps.user-persona-generator.output}}
 
 **Existing product context:** {{input.technical_context}}
 
-**Stakeholder input (if available):** Use the business context from Stage 1.
+**Stakeholder input (if available):** {{input.business_context}}
 
-**Constraints (if known):** Use the technical context provided above.
+**Constraints (if known):** {{input.technical_context}}
 
 ### Instructions
 
