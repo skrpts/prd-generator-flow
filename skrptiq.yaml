@@ -19,9 +19,11 @@ tags:
   - "product-management"
 
 requires:
-  services: []
+  services:
+    - "llm-service"
   permissions: []
   data_handling:
+    - "pii"
     - "product-requirements"
     - "user-research"
     - "technical-specifications"
