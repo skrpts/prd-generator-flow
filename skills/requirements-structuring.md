@@ -7,8 +7,6 @@ tags: [Production, Tested]
 connections:
   - target: llm-service
     type: runs_on
-  - target: prd-reference-guide
-    type: references
 metadata:
   estimated_duration: "4 minutes"
   avg_tokens: 3000
@@ -17,7 +15,7 @@ metadata:
 
 ## Requirements Structuring
 
-This skill transforms unstructured requirements input — stakeholder requests, user stories, meeting notes, feature ideas — into a rigorously structured requirements hierarchy. The output is suitable for inclusion in a PRD and for engineering estimation.
+This skill transforms unstructured requirements input — stakeholder requests, user stories, meeting notes, feature ideas — into a rigorously structured requirements hierarchy. The output is suitable for inclusion in specifications and for engineering estimation.
 
 ### Core Capability
 

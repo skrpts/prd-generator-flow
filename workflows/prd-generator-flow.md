@@ -21,11 +21,17 @@ connections:
     type: uses
   - target: technical-constraints-prompt
     type: uses
+  - target: executive-summary
+    type: uses
   - target: prd-assembler
+    type: uses
+  - target: executive-summary-prompt
     type: uses
   - target: llm-service
     type: runs_on
   - target: prd-reference-guide
+    type: references
+  - target: product-strategy-guide
     type: references
   - target: prd-writing-standards
     type: references
