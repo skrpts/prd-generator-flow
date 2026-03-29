@@ -3,7 +3,7 @@ type: asset
 id: persona-card-template
 title: Persona Card Template
 description: "Template for user persona cards used in PRDs and product documentation"
-tags: [Production, Customer-Facing, planning:product, design:product]
+tags: [Production, Customer-Facing, Audience, Documentation, Planning]
 connections: []
 metadata:
   asset_type: "template"

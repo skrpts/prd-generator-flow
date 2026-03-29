@@ -3,7 +3,7 @@ type: prompt
 id: success-metrics-definer
 title: Success Metrics Definer
 description: "Define measurable success criteria, KPIs, leading indicators, and guardrail metrics for a product initiative"
-tags: [Production, planning:product, data:metrics, design:product]
+tags: [Production, Metrics, Planning]
 connections:
   - target: requirements-structuring
     type: derived_from

@@ -3,7 +3,7 @@ type: skill
 id: requirements-structuring
 title: Requirements Structuring
 description: "Organising raw requirements into structured, hierarchical format with clear categorisation and traceability"
-tags: [Production, Tested, planning:product, design:product]
+tags: [Production, Tested, Planning, Strategy]
 connections:
   - target: llm-service
     type: runs_on

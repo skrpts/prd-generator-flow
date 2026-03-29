@@ -3,7 +3,7 @@ type: prompt
 id: prd-assembler
 title: PRD Assembler
 description: "Assemble all pipeline outputs into a complete, reviewable product requirements document"
-tags: [Production, planning:product, writing:product, design:product]
+tags: [Production, Planning, Strategy]
 connections:
   - target: requirements-structuring
     type: derived_from

@@ -3,7 +3,7 @@ type: prompt
 id: technical-constraints-prompt
 title: Technical Constraints Documenter
 description: "Document technical constraints, dependencies, architecture impact, and migration considerations"
-tags: [Production, planning:product, technical:architecture, design:product]
+tags: [Production, Code, Planning]
 connections:
   - target: technical-scoping
     type: derived_from

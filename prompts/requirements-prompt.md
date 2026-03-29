@@ -3,7 +3,7 @@ type: prompt
 id: requirements-prompt
 title: Requirements Elicitor
 description: "Elicit and structure functional and non-functional requirements with priority and traceability"
-tags: [Production, planning:product, design:product]
+tags: [Production, Planning, Strategy]
 connections:
   - target: requirements-structuring
     type: derived_from

@@ -3,7 +3,7 @@ type: source
 id: prd-reference-guide
 title: PRD Reference Guide
 description: "Reference standards for PRD writing, including section definitions, quality criteria, and industry conventions"
-tags: [Production, planning:product, design:product]
+tags: [Production, Planning, Writing]
 connections: []
 metadata:
   source_type: "reference"
