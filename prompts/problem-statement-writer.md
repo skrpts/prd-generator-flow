@@ -3,7 +3,7 @@ type: prompt
 id: problem-statement-writer
 title: Problem Statement Writer
 description: "Craft a clear, compelling problem statement that grounds the entire PRD"
-tags: [Production]
+tags: [Production, planning:product, design:product]
 connections:
   - target: requirements-structuring
     type: derived_from

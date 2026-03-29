@@ -3,7 +3,7 @@ type: prompt
 id: user-persona-generator
 title: User Persona Generator
 description: "Generate detailed user personas from research data and product context using the persona card template"
-tags: [Production]
+tags: [Production, planning:product, design:product]
 connections:
   - target: stakeholder-analysis
     type: derived_from

@@ -3,7 +3,7 @@ type: document
 id: stakeholder-mapping-guide
 title: Stakeholder Mapping Guide
 description: "Guide to stakeholder identification, influence mapping, and engagement planning for product initiatives"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, planning:product, design:product]
 connections:
   - target: prd-reference-guide
     type: references

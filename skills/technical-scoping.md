@@ -3,7 +3,7 @@ type: skill
 id: technical-scoping
 title: Technical Scoping
 description: "Assessing technical feasibility, identifying constraints, dependencies, and architectural implications"
-tags: [Production, Tested]
+tags: [Production, Tested, planning:product, technical:architecture, design:product]
 connections:
   - target: llm-service
     type: runs_on

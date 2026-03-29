@@ -3,7 +3,7 @@ type: document
 id: prd-writing-standards
 title: PRD Writing Standards
 description: "Internal standards and conventions for writing product requirements documents"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, planning:product, design:product]
 connections:
   - target: prd-reference-guide
     type: references

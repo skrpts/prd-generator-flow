@@ -3,7 +3,7 @@ type: workflow
 id: prd-generator-flow
 title: PRD Generator Flow
 description: "End-to-end workflow for generating a complete product requirements document with stakeholder analysis, success metrics, and technical constraints"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:audience, planning:product, data:metrics, technical:architecture]
 connections:
   - target: requirements-structuring
     type: uses
