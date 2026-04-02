@@ -42,11 +42,11 @@ connections:
   - target: persona-card-template
     type: references
   - target: risk-assessment
+    type: uses
 metadata:
   estimated_duration: "30 minutes"
   avg_tokens: 22000
   trigger: manual
-    type: uses
 ---
 
 ## PRD Generator Flow
