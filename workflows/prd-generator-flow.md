@@ -45,6 +45,8 @@ metadata:
   estimated_duration: "30 minutes"
   avg_tokens: 22000
   trigger: manual
+  - target: risk-assessment
+    type: uses
 ---
 
 ## PRD Generator Flow
