@@ -41,11 +41,11 @@ connections:
     type: references
   - target: persona-card-template
     type: references
+  - target: risk-assessment
 metadata:
   estimated_duration: "30 minutes"
   avg_tokens: 22000
   trigger: manual
-  - target: risk-assessment
     type: uses
 ---
 
