@@ -41,6 +41,12 @@ connections:
     type: references
   - target: persona-card-template
     type: references
+  - target: brief-compliance-check
+    type: uses
+  - target: consistency-check
+    type: uses
+  - target: input-gap-check
+    type: uses
 metadata:
   estimated_duration: "30 minutes"
   avg_tokens: 22000
