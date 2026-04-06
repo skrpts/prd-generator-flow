@@ -11,21 +11,7 @@ connections:
     type: uses
   - target: technical-scoping
     type: uses
-  - target: problem-statement-writer
-    type: uses
-  - target: user-persona-generator
-    type: uses
-  - target: requirements-prompt
-    type: uses
-  - target: success-metrics-definer
-    type: uses
-  - target: technical-constraints-prompt
-    type: uses
   - target: executive-summary
-    type: uses
-  - target: prd-assembler
-    type: uses
-  - target: executive-summary-prompt
     type: uses
   - target: llm-service
     type: runs_on
