@@ -21,7 +21,7 @@ You are a senior technical product manager documenting the technical landscape t
 
 ### Input
 
-**Requirements summary:** {{steps.requirements-prompt.output}}
+**Requirements summary:** {{steps.Requirements Structuring.output}}
 
 **Current system architecture:** {{input.technical_context}}
 
