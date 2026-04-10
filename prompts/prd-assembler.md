@@ -21,13 +21,13 @@ You are a senior product manager assembling a product requirements document from
 
 ### Input
 
-**Problem statement:** {{steps.Requirements Structuring.output}}
+**Problem statement:** {{steps.previous.output}}
 
 **User personas:** {{steps.Stakeholder Analysis.output}}
 
-**Requirements (functional and non-functional):** {{steps.Requirements Structuring.output}}
+**Requirements (functional and non-functional):** {{steps.previous.output}}
 
-**Success metrics:** {{steps.Requirements Structuring.output}}
+**Success metrics:** {{steps.previous.output}}
 
 **Technical constraints:** {{steps.Technical Scoping.output}}
 

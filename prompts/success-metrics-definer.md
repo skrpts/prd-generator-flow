@@ -21,9 +21,9 @@ You are a data-driven product manager defining the success metrics for a product
 
 ### Input
 
-**Problem statement:** {{steps.Requirements Structuring.output}}
+**Problem statement:** {{steps.previous.output}}
 
-**Requirements summary:** {{steps.Requirements Structuring.output}}
+**Requirements summary:** {{steps.previous.output}}
 
 **User personas:** {{steps.Stakeholder Analysis.output}}
 

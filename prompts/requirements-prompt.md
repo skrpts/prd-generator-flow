@@ -21,7 +21,7 @@ You are an experienced business analyst eliciting and structuring product requir
 
 ### Input
 
-**Problem statement:** {{steps.Requirements Structuring.output}}
+**Problem statement:** {{steps.previous.output}}
 
 **User personas:** {{steps.Stakeholder Analysis.output}}
 
