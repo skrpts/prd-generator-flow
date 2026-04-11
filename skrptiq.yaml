@@ -2,7 +2,7 @@ id: "042554e3-0fbb-4465-9e0d-1afe6bf50181"
 name: "prd-generator-flow"
 display_name: "PRD Generator Flow"
 description: "Full product requirements document generation with stakeholder context, success metrics, and technical constraints"
-version: "1.1.5"
+version: "1.1.6"
 engine: ">=1.0.0"
 
 author:
@@ -28,6 +28,17 @@ requires:
     - "product-requirements"
     - "user-research"
     - "technical-specifications"
+
+# --- Output ---
+output_step: "executive-summary"
+composite_steps:
+  - "requirements-structuring"
+  - "stakeholder-analysis"
+  - "technical-scoping"
+  - "executive-summary"
+  - "brief-compliance-check"
+  - "consistency-check"
+  - "input-gap-check"
 
 contents:
   skills: 7
