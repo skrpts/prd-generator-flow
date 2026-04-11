@@ -37,6 +37,20 @@ metadata:
   estimated_duration: "30 minutes"
   avg_tokens: 22000
   trigger: manual
+execution:
+  - skill: "requirements-structuring"
+  - skill: "stakeholder-analysis"
+    input_from: "requirements-structuring"
+  - skill: "technical-scoping"
+    input_from: "stakeholder-analysis"
+  - skill: "executive-summary"
+    input_from: "technical-scoping"
+  - skill: "brief-compliance-check"
+    input_from: "executive-summary"
+  - skill: "consistency-check"
+    input_from: "executive-summary"
+  - skill: "input-gap-check"
+    input_from: "executive-summary"
 ---
 
 ## PRD Generator Flow
