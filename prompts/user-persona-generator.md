@@ -4,6 +4,19 @@ id: user-persona-generator
 title: User Persona Generator
 description: "Generate detailed user personas from research data and product context using the persona card template"
 tags: [Production, Audience, Planning]
+inputs:
+  initiative_description:
+    label: "Initiative Description"
+    description: "Description of the product initiative or project"
+    example: "Launch self-serve onboarding flow to reduce support tickets by 40%"
+    required: true
+    type: text
+  customer_evidence:
+    label: "Customer Evidence"
+    description: "Customer data supporting the initiative"
+    example: "23% of support tickets are about onboarding. Average time-to-value: 14 days."
+    required: true
+    type: text
 connections:
   - target: stakeholder-analysis
     type: derived_from

@@ -4,6 +4,18 @@ id: success-metrics-definer
 title: Success Metrics Definer
 description: "Define measurable success criteria, KPIs, leading indicators, and guardrail metrics for a product initiative"
 tags: [Production, Metrics, Planning]
+inputs:
+  business_context:
+    label: "Business Context"
+    description: "Business Context"
+    required: true
+    type: text
+  customer_evidence:
+    label: "Customer Evidence"
+    description: "Customer data supporting the initiative"
+    example: "23% of support tickets are about onboarding. Average time-to-value: 14 days."
+    required: true
+    type: text
 connections:
   - target: requirements-structuring
     type: derived_from

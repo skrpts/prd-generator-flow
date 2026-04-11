@@ -4,6 +4,18 @@ id: technical-constraints-prompt
 title: Technical Constraints Documenter
 description: "Document technical constraints, dependencies, architecture impact, and migration considerations"
 tags: [Production, Code, Planning]
+inputs:
+  technical_context:
+    label: "Technical Context"
+    description: "Technical Context"
+    required: true
+    type: text
+  initiative_description:
+    label: "Initiative Description"
+    description: "Description of the product initiative or project"
+    example: "Launch self-serve onboarding flow to reduce support tickets by 40%"
+    required: true
+    type: text
 connections:
   - target: technical-scoping
     type: derived_from

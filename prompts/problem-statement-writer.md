@@ -4,6 +4,24 @@ id: problem-statement-writer
 title: Problem Statement Writer
 description: "Craft a clear, compelling problem statement that grounds the entire PRD"
 tags: [Production, Planning, Strategy]
+inputs:
+  initiative_description:
+    label: "Initiative Description"
+    description: "Description of the product initiative or project"
+    example: "Launch self-serve onboarding flow to reduce support tickets by 40%"
+    required: true
+    type: text
+  customer_evidence:
+    label: "Customer Evidence"
+    description: "Customer data supporting the initiative"
+    example: "23% of support tickets are about onboarding. Average time-to-value: 14 days."
+    required: true
+    type: text
+  business_context:
+    label: "Business Context"
+    description: "Business Context"
+    required: true
+    type: text
 connections:
   - target: requirements-structuring
     type: derived_from

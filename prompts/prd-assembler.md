@@ -4,6 +4,13 @@ id: prd-assembler
 title: PRD Assembler
 description: "Assemble all pipeline outputs into a complete, reviewable product requirements document"
 tags: [Production, Planning, Strategy]
+inputs:
+  initiative_description:
+    label: "Initiative Description"
+    description: "Description of the product initiative or project"
+    example: "Launch self-serve onboarding flow to reduce support tickets by 40%"
+    required: true
+    type: text
 connections:
   - target: requirements-structuring
     type: derived_from

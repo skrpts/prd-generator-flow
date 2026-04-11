@@ -4,6 +4,17 @@ id: requirements-prompt
 title: Requirements Elicitor
 description: "Elicit and structure functional and non-functional requirements with priority and traceability"
 tags: [Production, Planning, Strategy]
+inputs:
+  technical_context:
+    label: "Technical Context"
+    description: "Technical Context"
+    required: true
+    type: text
+  business_context:
+    label: "Business Context"
+    description: "Business Context"
+    required: true
+    type: text
 connections:
   - target: requirements-structuring
     type: derived_from
