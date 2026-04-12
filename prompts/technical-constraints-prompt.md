@@ -8,6 +8,7 @@ inputs:
   technical_context:
     label: "Technical Context"
     description: "Technical Context"
+    example: "React 19 + Node.js backend, PostgreSQL, deployed on AWS ECS, approximately 50k monthly active users"
     required: true
     type: text
   initiative_description:
