@@ -42,22 +42,17 @@ execution:
     step_type: "synthesis"
   - skill: "stakeholder-analysis"
     step_type: "synthesis"
-    input_from: "requirements-structuring"
   - skill: "technical-scoping"
     step_type: "synthesis"
-    input_from: "stakeholder-analysis"
   - skill: "executive-summary"
     step_type: "synthesis"
-    input_from: "technical-scoping"
+  - parallel:
+    - skill: "consistency-check"
+      step_type: "review"
+    - skill: "input-gap-check"
+      step_type: "review"
   - skill: "brief-compliance-check"
     step_type: "review"
-    input_from: "executive-summary"
-  - skill: "consistency-check"
-    step_type: "review"
-    input_from: "executive-summary"
-  - skill: "input-gap-check"
-    step_type: "review"
-    input_from: "executive-summary"
 ---
 
 ## PRD Generator Flow
