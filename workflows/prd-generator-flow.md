@@ -37,6 +37,15 @@ metadata:
   estimated_duration: "30 minutes"
   avg_tokens: 22000
   trigger: manual
+output_step: "executive-summary"
+composite_steps:
+  - "requirements-structuring"
+  - "stakeholder-analysis"
+  - "technical-scoping"
+  - "executive-summary"
+  - "brief-compliance-check"
+  - "consistency-check"
+  - "input-gap-check"
 execution:
   - skill: "requirements-structuring"
     step_type: "synthesis"
