@@ -51,6 +51,8 @@ execution:
     step_type: "synthesis"
   - skill: "stakeholder-analysis"
     step_type: "synthesis"
+    context:
+      org_context: ""
   - skill: "technical-scoping"
     step_type: "synthesis"
   - skill: "executive-summary"
