@@ -13,6 +13,8 @@ connections:
     type: uses
   - target: executive-summary
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: prd-reference-guide
@@ -37,7 +39,7 @@ metadata:
   estimated_duration: "30 minutes"
   avg_tokens: 22000
   trigger: manual
-output_step: "executive-summary"
+output_step: "language-polish"
 composite_steps:
   - "requirements-structuring"
   - "stakeholder-analysis"
@@ -49,6 +51,7 @@ composite_steps:
 execution:
   - skill: "requirements-structuring"
     step_type: "synthesis"
+    prompt: "requirements-prompt"
   - skill: "stakeholder-analysis"
     step_type: "synthesis"
     context:
@@ -57,6 +60,8 @@ execution:
     step_type: "synthesis"
   - skill: "executive-summary"
     step_type: "synthesis"
+  - skill: "language-polish"
+    step_type: "content"
   - parallel:
     - skill: "consistency-check"
       step_type: "review"
