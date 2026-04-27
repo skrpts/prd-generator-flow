@@ -53,21 +53,27 @@ execution:
     step_type: "synthesis"
     prompt: "requirements-prompt"
   - skill: "stakeholder-analysis"
+    prompt: "user-persona-generator"
     step_type: "synthesis"
     context:
       org_context: ""
   - skill: "technical-scoping"
+    prompt: "technical-constraints-prompt"
     step_type: "synthesis"
   - skill: "executive-summary"
+    prompt: "executive-summary-prompt"
     step_type: "synthesis"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
   - parallel:
     - skill: "consistency-check"
+      prompt: "check-consistency"
       step_type: "review"
     - skill: "input-gap-check"
       step_type: "review"
   - skill: "brief-compliance-check"
+    prompt: "check-brief-compliance"
     step_type: "review"
 ---
 
