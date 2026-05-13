@@ -2,7 +2,7 @@ id: "042554e3-0fbb-4465-9e0d-1afe6bf50181"
 name: "prd-generator-flow"
 display_name: "PRD Generator Flow"
 description: "Full product requirements document generation with stakeholder context, success metrics, and technical constraints"
-version: "1.1.18"
+version: "1.1.19"
 engine: ">=1.0.0"
 
 author:
@@ -31,10 +31,10 @@ requires:
 
 contents:
   skills: 8
-  prompts: 10
+  prompts: 11
   workflows: 1
   services: 1
   sources: 2
   documents: 2
   assets: 2
-  total: 26
+  total: 27

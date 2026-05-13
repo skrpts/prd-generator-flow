@@ -56,7 +56,7 @@ execution:
     prompt: "user-persona-generator"
     step_type: "synthesis"
     context:
-      org_context: ""
+      org_context: "No additional organisational context"
   - skill: "technical-scoping"
     prompt: "technical-constraints-prompt"
     step_type: "synthesis"
@@ -67,24 +67,25 @@ execution:
     prompt: "polish-language"
     step_type: "content"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
   - parallel:
     - skill: "consistency-check"
       prompt: "check-consistency"
       step_type: "review"
       context:
-        voice_profile: ""
-        consistency_strictness: ""
+        voice_profile: "Neutral professional tone"
+        consistency_strictness: "Standard"
     - skill: "input-gap-check"
-      step_type: "review"
+      prompt: "check-input-gaps"
+    step_type: "validation"
   - skill: "brief-compliance-check"
     prompt: "check-brief-compliance"
     step_type: "review"
     context:
-      audience_profile: ""
-      compliance_brief: ""
-      compliance_depth: ""
+      audience_profile: "General professional audience"
+      compliance_brief: "No specific compliance requirements"
+      compliance_depth: "Standard"
 ---
 
 ## PRD Generator Flow
