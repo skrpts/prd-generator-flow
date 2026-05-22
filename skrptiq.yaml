@@ -2,7 +2,7 @@ id: "042554e3-0fbb-4465-9e0d-1afe6bf50181"
 name: "prd-generator-flow"
 display_name: "PRD Generator Flow"
 description: "Full product requirements document generation with stakeholder context, success metrics, and technical constraints"
-version: "1.1.24"
+version: "1.1.25"
 engine: ">=0.1.0"
 
 author:
@@ -14,10 +14,10 @@ repository: "https://github.com/skrpts/prd-generator-flow"
 category: "product-manager"
 tags:
   - "prd"
+  - "product-management"
   - "product-requirements"
   - "stakeholder-analysis"
   - "technical-scoping"
-  - "product-management"
 
 requires:
   services:
