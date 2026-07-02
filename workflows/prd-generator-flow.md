@@ -52,20 +52,25 @@ execution:
   - skill: "requirements-structuring"
     step_type: "synthesis"
     prompt: "requirements-prompt"
+    output: { name: "requirements", type: "text" }
   - skill: "stakeholder-analysis"
     prompt: "user-persona-generator"
     step_type: "synthesis"
+    output: { name: "personas", type: "text" }
     context:
       org_context: "No additional organisational context"
   - skill: "technical-scoping"
     prompt: "technical-constraints-prompt"
     step_type: "synthesis"
+    output: { name: "technical_scope", type: "text" }
   - skill: "executive-summary"
     prompt: "executive-summary-prompt"
     step_type: "synthesis"
+    output: { name: "summary", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_prd", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
@@ -73,15 +78,18 @@ execution:
     - skill: "consistency-check"
       prompt: "check-consistency"
       step_type: "review"
+      output: { name: "consistency_verdict", type: "decision" }
       context:
         voice_profile: "Neutral professional tone"
         consistency_strictness: "Standard"
     - skill: "input-gap-check"
       prompt: "check-input-gaps"
-    step_type: "validation"
+      step_type: "validation"
+      output: { name: "input_gaps", type: "decision" }
   - skill: "brief-compliance-check"
     prompt: "check-brief-compliance"
     step_type: "review"
+    output: { name: "compliance_verdict", type: "decision" }
     context:
       audience_profile: "General professional audience"
       compliance_brief: "No specific compliance requirements"

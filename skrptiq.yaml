@@ -2,7 +2,7 @@ id: "042554e3-0fbb-4465-9e0d-1afe6bf50181"
 name: "prd-generator-flow"
 display_name: "PRD Generator Flow"
 description: "Full product requirements document generation with stakeholder context, success metrics, and technical constraints"
-version: "1.1.27"
+version: "1.1.28"
 engine: ">=0.1.0"
 
 author:
@@ -96,3 +96,17 @@ contents:
   documents: 2
   assets: 2
   total: 13
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-02T19:57:14.691Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: ["pii"]
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/prd-generator-flow/security"

@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.28
+GH#745 — declare per-step `output: {name, type}` on every execution step (requirements/text, personas/text, technical_scope/text, summary/text, polished_prd/text, consistency_verdict/decision, input_gaps/decision, compliance_verdict/decision). Lights up the #744 rich flow-map with named, typed outputs. **Also corrects the input-gap-check step to its intended `validation` type** — its `step_type` was mis-indented (outside the parallel item) and dropped at parse time, so the step previously ran untyped; it is now a validation gate. Content + structural fix (GH#748); no bindings changes.
+
 ## v1.1.27
 GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 14 inline shared-content files and declare 14 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Closes pre-Step-3 inline-vendoring for this bundle.
 
