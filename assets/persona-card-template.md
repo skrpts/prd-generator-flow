@@ -67,7 +67,7 @@ Use this template for each user persona in the PRD. Complete every section — e
 
 **Emotional dimension:** [How the problem makes them feel — frustrated at wasted time, anxious about errors, embarrassed when presenting inaccurate data]
 
-## Behaviour Patterns
+## Behavior Patterns
 
 | Pattern | Detail |
 |---------|--------|

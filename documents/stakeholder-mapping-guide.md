@@ -100,9 +100,9 @@ Stakeholder conflicts are normal. Different functions have different priorities.
 
 **Common conflict patterns:**
 - Engineering says "too complex" while Product says "essential for users"
-- Sales wants features for one large customer while Product prioritises the broader base
+- Sales wants features for one large customer while Product prioritizes the broader base
 - Legal wants restrictive data handling while Product wants seamless UX
-- Finance wants cost minimisation while Engineering wants the right tool for the job
+- Finance wants cost minimization while Engineering wants the right tool for the job
 
 **Resolution approach:**
 1. Acknowledge both perspectives

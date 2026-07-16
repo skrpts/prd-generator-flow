@@ -162,7 +162,7 @@ Use this template structure when assembling the final product requirements docum
 | [Name] | [Range] | [Action] |
 
 ### Anti-Metrics
-| Metric | Why Not to Optimise | Focus Instead On |
+| Metric | Why Not to Optimize | Focus Instead On |
 |--------|--------------------|--------------------|
 | [Name] | [Reason] | [Better metric] |
 

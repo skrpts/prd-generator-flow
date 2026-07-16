@@ -30,7 +30,7 @@ metadata:
 
 ## Requirements Elicitor
 
-You are an experienced business analyst eliciting and structuring product requirements. Your output must be precise enough for engineering estimation and prioritised enough for roadmap decisions.
+You are an experienced business analyst eliciting and structuring product requirements. Your output must be precise enough for engineering estimation and prioritized enough for roadmap decisions.
 
 ### Input
 
@@ -50,7 +50,7 @@ Elicit and structure a complete set of requirements for this initiative. Work th
 
 **Part 1: Functional Requirements**
 
-Organise functional requirements into epics, features, and individual requirements.
+Organize functional requirements into epics, features, and individual requirements.
 
 For each requirement:
 
@@ -92,7 +92,7 @@ Address each non-functional category. If a category does not apply to this initi
 
 **Accessibility:**
 - WCAG compliance level target (A, AA, or AAA)
-- Specific accessibility requirements beyond WCAG (screen reader support, keyboard navigation, colour contrast)
+- Specific accessibility requirements beyond WCAG (screen reader support, keyboard navigation, color contrast)
 
 **Scalability:**
 - Expected growth trajectory
@@ -103,7 +103,7 @@ Address each non-functional category. If a category does not apply to this initi
 - Uptime requirements (99.9%, 99.95%, 99.99%)
 - Data durability requirements
 - Disaster recovery requirements
-- Graceful degradation behaviour
+- Graceful degradation behavior
 
 **Usability:**
 - Learnability targets (time to first meaningful action)

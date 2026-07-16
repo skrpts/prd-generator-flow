@@ -130,7 +130,7 @@ This workflow produces a complete product requirements document (PRD) from initi
 
 1. Invoke the **requirements-prompt** using the **requirements-structuring** skill.
 2. The prompt elicits and structures both functional and non-functional requirements:
-   - **Functional requirements:** What the product must do, organised hierarchically
+   - **Functional requirements:** What the product must do, organized hierarchically
    - **Non-functional requirements:** Performance, security, accessibility, scalability, compliance
    - **Constraints:** Technical, regulatory, or business constraints that limit design options
 3. Each requirement is assigned a priority (Must Have, Should Have, Could Have, Won't Have).
@@ -209,11 +209,11 @@ Before running this workflow:
 
 1. **No external services required** — this workflow runs entirely on your configured LLM provider.
 2. **Gather your inputs** — the more context you provide (customer evidence, business objectives, technical constraints), the better the PRD. At minimum you need the initiative description.
-3. **Review the templates** — check `assets/prd-template.md` and `assets/persona-card-template.md` to understand the output format. Customise them to match your team's PRD standards if needed.
+3. **Review the templates** — check `assets/prd-template.md` and `assets/persona-card-template.md` to understand the output format. Customize them to match your team's PRD standards if needed.
 
 ## Provider Notes
 
-- The PRD assembly stage (Stage 6) is the most token-intensive — it needs to synthesise all previous outputs into a single document. A model with a large context window works best here.
+- The PRD assembly stage (Stage 6) is the most token-intensive — it needs to synthesize all previous outputs into a single document. A model with a large context window works best here.
 - Requirements elicitation and technical scoping benefit from strong analytical reasoning.
 - Persona generation and problem statement writing benefit from creative, natural language generation.
 - The full pipeline uses approximately 22,000 tokens across all stages.

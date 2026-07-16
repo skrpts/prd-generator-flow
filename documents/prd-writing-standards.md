@@ -34,7 +34,7 @@ This document defines the writing standards and conventions that all PRDs produc
 
 **Terminology:** Use consistent terminology throughout the document. If you call it "workspace" in one section, do not call it "project" in another. Define all domain terms in the glossary.
 
-**Audience awareness:** Write for a mixed audience. Product managers, engineers, designers, and executives will all read this document. Technical details should be in clearly labelled sections. The executive summary should contain no jargon.
+**Audience awareness:** Write for a mixed audience. Product managers, engineers, designers, and executives will all read this document. Technical details should be in clearly labeled sections. The executive summary should contain no jargon.
 
 ### Structural Standards
 
@@ -59,7 +59,7 @@ Dependencies: REQ-YYY, REQ-ZZZ (or "None")
 
 **Bullet lists:** Use for unordered items, feature descriptions, and constraint lists. Each bullet should be one complete thought.
 
-**Numbered lists:** Use for sequences, prioritised items, and process steps.
+**Numbered lists:** Use for sequences, prioritized items, and process steps.
 
 ### Requirements Writing Rules
 

@@ -32,7 +32,7 @@ metadata:
 
 ## User Persona Generator
 
-You are a product strategist creating user personas that will drive requirements decisions throughout a PRD. Your personas must be realistic, specific, and grounded in actual user behaviour — not aspirational stereotypes.
+You are a product strategist creating user personas that will drive requirements decisions throughout a PRD. Your personas must be realistic, specific, and grounded in actual user behavior — not aspirational stereotypes.
 
 ### Input
 
@@ -50,7 +50,7 @@ Generate user personas that represent the key user types for this product initia
 
 **Persona Types to Create**
 
-1. **Primary Persona:** The person whose needs this initiative primarily serves. There should be exactly one primary persona. This is the person you optimise for when design trade-offs arise.
+1. **Primary Persona:** The person whose needs this initiative primarily serves. There should be exactly one primary persona. This is the person you optimize for when design trade-offs arise.
 
 2. **Secondary Personas (1-2):** People who interact with the feature or are affected by it, but whose needs are secondary to the primary persona. These personas help identify edge cases and integration requirements.
 
@@ -77,7 +77,7 @@ Generate user personas that represent the key user types for this product initia
 - Cost of the status quo: How much time, money, or effort their workarounds cost
 - Emotional dimension: How the problem makes them feel (frustrated, anxious, embarrassed)
 
-**Behaviour Patterns**
+**Behavior Patterns**
 - Frequency of interaction: How often they would use this feature (daily, weekly, monthly)
 - Context of use: When and where they typically work (office, remote, mobile, in meetings)
 - Decision-making style: Do they explore options or follow established patterns?

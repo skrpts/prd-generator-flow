@@ -76,11 +76,11 @@ Import the problem statement directly from the pipeline output. Include both the
 
 **3. User Personas**
 
-Import the persona cards. Add a brief narrative connecting the personas to each other and to the problem statement. Ensure the anti-persona is clearly labelled.
+Import the persona cards. Add a brief narrative connecting the personas to each other and to the problem statement. Ensure the anti-persona is clearly labeled.
 
 **4. Requirements**
 
-Organise requirements in the following structure:
+Organize requirements in the following structure:
 
 *Functional Requirements:*
 Group by epic, then by feature, then by individual requirement. Each requirement should show its ID, title, description, priority, acceptance criteria, and dependencies.

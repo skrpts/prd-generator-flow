@@ -40,7 +40,7 @@ This source document defines the standards, conventions, and quality criteria fo
 
 **Testability:** Every requirement has acceptance criteria that a QA engineer could execute without interpretation.
 
-**Prioritisation:** All requirements are prioritised. The distribution follows MoSCoW guidelines:
+**Prioritization:** All requirements are prioritized. The distribution follows MoSCoW guidelines:
 - Must Have: 50-60% of requirements (never exceed 60%)
 - Should Have: 20-30%
 - Could Have: 10-20%
@@ -57,7 +57,7 @@ This source document defines the standards, conventions, and quality criteria fo
 **User Personas:**
 - Must include at least one primary and one anti-persona
 - Must be grounded in research or data, not assumptions
-- Must include behavioural patterns, not just demographics
+- Must include behavioral patterns, not just demographics
 - Must include realistic quotes
 
 **Requirements:**

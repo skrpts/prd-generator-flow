@@ -82,7 +82,7 @@ Describe the trajectory if this problem is not addressed. Will it get worse? Wil
 
 **Structured Output**
 
-After answering the five questions, synthesise them into two outputs:
+After answering the five questions, synthesize them into two outputs:
 
 **Short-form problem statement (2-3 sentences):**
 A concise statement suitable for the PRD executive summary, slide decks, and stakeholder conversations. It should stand alone and be immediately understandable.
@@ -104,10 +104,10 @@ For each evidence point, note its source and recency. Evidence older than 12 mon
 
 ### Quality Checks
 
-Before finalising:
+Before finalizing:
 - Can a person unfamiliar with the product understand the problem after reading the statement?
 - Is the problem described independently of any specific solution?
-- Would the target users recognise this as a real problem they experience?
+- Would the target users recognize this as a real problem they experience?
 - Is the impact specific enough to justify investment?
 - Does the statement avoid technical jargon that would alienate non-technical stakeholders?
 

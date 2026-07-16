@@ -90,7 +90,7 @@ For each new component:
 **Existing components to modify:**
 For each modification:
 - Component name
-- Nature of change (new endpoint, schema change, behaviour change, performance optimisation)
+- Nature of change (new endpoint, schema change, behavior change, performance optimization)
 - Estimated scope of change (Small patch, Moderate refactor, Significant rework)
 - Risk of regression (Low, Medium, High)
 
@@ -135,7 +135,7 @@ Include estimated cost impact for any significant infrastructure additions.
 - What is the rollback plan if migration fails?
 
 **Feature rollout:**
-- Recommended rollout strategy (big bang, percentage rollout, segment-based, beta programme)
+- Recommended rollout strategy (big bang, percentage rollout, segment-based, beta program)
 - Feature flag requirements
 - Rollback procedure and triggers
 - Communication plan for affected users

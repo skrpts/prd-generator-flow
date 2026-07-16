@@ -96,7 +96,7 @@ For each major requirement, provide a feasibility rating:
 The technical scoping produces:
 - A dependency register (all internal, external, and data dependencies)
 - An architecture impact assessment (new components, modified components, integration points)
-- A risk register (categorised risks with likelihood, impact, and mitigation)
+- A risk register (categorized risks with likelihood, impact, and mitigation)
 - An infrastructure requirements list
 - A migration and rollout plan
 - A feasibility summary with per-requirement ratings

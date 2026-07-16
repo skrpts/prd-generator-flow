@@ -98,18 +98,18 @@ For each guardrail metric:
 
 **5. Anti-Metrics**
 
-Identify 1-2 metrics that the team should explicitly NOT optimise for, because optimising for them would undermine the initiative's true goals.
+Identify 1-2 metrics that the team should explicitly NOT optimize for, because optimizing for them would undermine the initiative's true goals.
 
 For each anti-metric:
 - **Metric name**
-- **Why it is an anti-metric:** How optimising for this metric would lead to bad outcomes
+- **Why it is an anti-metric:** How optimizing for this metric would lead to bad outcomes
 - **What to do instead:** What the team should focus on instead
 
-Example: "Optimising for page views could lead to click-bait content that increases views but reduces user trust and long-term engagement."
+Example: "Optimizing for page views could lead to click-bait content that increases views but reduces user trust and long-term engagement."
 
 **6. Measurement Plan**
 
-Summarise the instrumentation and tracking requirements:
+Summarize the instrumentation and tracking requirements:
 - What analytics events need to be created or modified?
 - What database queries or dashboards need to be built?
 - What survey or feedback mechanisms need to be set up?
