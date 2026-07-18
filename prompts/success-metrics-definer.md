@@ -17,6 +17,20 @@ inputs:
     example: "23% of support tickets are about onboarding. Average time-to-value: 14 days."
     required: true
     type: text
+context_params:
+  problem_statement:
+    label: "Problem Statement"
+    description: "The problem statement produced upstream — the goal these metrics must measure against."
+    required: false
+  requirements:
+    label: "Requirements Summary"
+    description: "The structured requirements — what the initiative delivers, used to scope the metrics."
+    required: false
+  personas:
+    label: "User Personas"
+    description: "The user personas — the people whose behaviour these metrics track."
+    required: false
+    default_from_previous: true
 connections:
   - target: requirements-structuring
     type: derived_from
@@ -34,11 +48,11 @@ You are a data-driven product manager defining the success metrics for a product
 
 ### Input
 
-**Problem statement:** {{steps.previous.output}}
+**Problem statement:** {{step.context.problem_statement}}
 
-**Requirements summary:** {{steps.previous.output}}
+**Requirements summary:** {{step.context.requirements}}
 
-**User personas:** {{steps.Stakeholder Analysis.output}}
+**User personas:** {{step.context.personas}}
 
 **Business objectives:** {{input.business_context}}
 

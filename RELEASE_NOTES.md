@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.30
+GH#863 Wave 1 (#858-A1 class) — fix K-045 intent/output mismatch: the workflow shipped the prd-assembler, problem-statement-writer, and success-metrics-definer prompts but never invoked them, so it emitted polished intermediate analysis rather than the promised PRD. Wired all three as execution steps in dependency order (Problem Statement → Requirements → Personas → Technical Scoping → Success Metrics → Executive Summary → **PRD Assembler** → language-polish), each backed by a new skill (`problem-statement`, `success-metrics`, `prd-assembly`) so its title is `from_step`-addressable. Cross-step inputs are now explicit `from_step` bindings via named `context_params`. Repinned polish-language 1.0.1→1.0.6 (adds the bindable `source` slot) and bound language-polish `source` ← the assembled PRD, so the final output is the polished PRD rather than the last intermediate step. Skills 1→4, total 13→16.
+
 ## v1.1.29
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 

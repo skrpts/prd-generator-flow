@@ -5,13 +5,19 @@ title: PRD Generator Flow
 description: "End-to-end workflow for generating a complete product requirements document with stakeholder analysis, success metrics, and technical constraints"
 tags: [Production, Tested, Audience, Code, Metrics]
 connections:
+  - target: problem-statement
+    type: uses
   - target: requirements-structuring
     type: uses
   - target: stakeholder-analysis
     type: uses
   - target: technical-scoping
     type: uses
+  - target: success-metrics
+    type: uses
   - target: executive-summary
+    type: uses
+  - target: prd-assembly
     type: uses
   - target: language-polish
     type: uses
@@ -41,14 +47,21 @@ metadata:
   trigger: manual
 output_step: "language-polish"
 composite_steps:
+  - "problem-statement"
   - "requirements-structuring"
   - "stakeholder-analysis"
   - "technical-scoping"
+  - "success-metrics"
   - "executive-summary"
+  - "prd-assembly"
   - "brief-compliance-check"
   - "consistency-check"
   - "input-gap-check"
 execution:
+  - skill: "problem-statement"
+    step_type: "synthesis"
+    prompt: "problem-statement-writer"
+    output: { name: "problem_statement", type: "text" }
   - skill: "requirements-structuring"
     step_type: "synthesis"
     prompt: "requirements-prompt"
@@ -63,10 +76,44 @@ execution:
     prompt: "technical-constraints-prompt"
     step_type: "synthesis"
     output: { name: "technical_scope", type: "text" }
+  - skill: "success-metrics"
+    prompt: "success-metrics-definer"
+    step_type: "synthesis"
+    output: { name: "success_metrics", type: "text" }
+    bindings:
+      problem_statement:
+        from_step: "Problem Statement"
+        field: output
+      requirements:
+        from_step: "Requirements Structuring"
+        field: output
+      personas:
+        from_step: "Stakeholder Analysis"
+        field: output
   - skill: "executive-summary"
     prompt: "executive-summary-prompt"
     step_type: "synthesis"
     output: { name: "summary", type: "text" }
+  - skill: "prd-assembly"
+    prompt: "prd-assembler"
+    step_type: "synthesis"
+    output: { name: "assembled_prd", type: "text" }
+    bindings:
+      problem_statement:
+        from_step: "Problem Statement"
+        field: output
+      personas:
+        from_step: "Stakeholder Analysis"
+        field: output
+      requirements:
+        from_step: "Requirements Structuring"
+        field: output
+      success_metrics:
+        from_step: "Success Metrics"
+        field: output
+      technical_scope:
+        from_step: "Technical Scoping"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
@@ -74,6 +121,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "PRD Assembler"
+        field: output
   - parallel:
     - skill: "consistency-check"
       prompt: "check-consistency"

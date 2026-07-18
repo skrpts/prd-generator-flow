@@ -11,6 +11,27 @@ inputs:
     example: "Launch self-serve onboarding flow to reduce support tickets by 40%"
     required: true
     type: text
+context_params:
+  problem_statement:
+    label: "Problem Statement"
+    description: "The problem statement produced upstream — grounds the PRD."
+    required: false
+  personas:
+    label: "User Personas"
+    description: "The user personas produced upstream — imported into the personas section."
+    required: false
+  requirements:
+    label: "Requirements"
+    description: "The functional and non-functional requirements produced upstream."
+    required: false
+  success_metrics:
+    label: "Success Metrics"
+    description: "The success-metrics framework produced upstream."
+    required: false
+  technical_scope:
+    label: "Technical Scope"
+    description: "The technical constraints and scoping document produced upstream."
+    required: false
 connections:
   - target: requirements-structuring
     type: derived_from
@@ -28,15 +49,15 @@ You are a senior product manager assembling a product requirements document from
 
 ### Input
 
-**Problem statement:** {{steps.previous.output}}
+**Problem statement:** {{step.context.problem_statement}}
 
-**User personas:** {{steps.Stakeholder Analysis.output}}
+**User personas:** {{step.context.personas}}
 
-**Requirements (functional and non-functional):** {{steps.previous.output}}
+**Requirements (functional and non-functional):** {{step.context.requirements}}
 
-**Success metrics:** {{steps.previous.output}}
+**Success metrics:** {{step.context.success_metrics}}
 
-**Technical constraints:** {{steps.Technical Scoping.output}}
+**Technical constraints:** {{step.context.technical_scope}}
 
 **Product name:** {{input.initiative_description}}
 
