@@ -57,6 +57,13 @@ composite_steps:
   - "brief-compliance-check"
   - "consistency-check"
   - "input-gap-check"
+inputs:
+  inputs_provided:
+    label: "Inputs Provided"
+    description: "The brief this PRD is written from — the problem, the audience and any constraints already known"
+    example: "Self-serve onboarding for teams under 10 seats; must ship before Q3; no new billing work"
+    required: true
+    type: text
 execution:
   - skill: "problem-statement"
     step_type: "synthesis"
@@ -94,6 +101,10 @@ execution:
     prompt: "executive-summary-prompt"
     step_type: "synthesis"
     output: { name: "summary", type: "text" }
+    bindings:
+      source:
+        from_step: "Success Metrics"
+        field: output
   - skill: "prd-assembly"
     prompt: "prd-assembler"
     step_type: "synthesis"
@@ -133,10 +144,17 @@ execution:
       context:
         voice_profile: "Neutral professional tone"
         consistency_strictness: "Standard"
+      bindings:
+        source:
+          from_step: "Language Polish"
+          field: output
     - skill: "input-gap-check"
       prompt: "check-input-gaps"
       step_type: "validation"
       output: { name: "input_gaps", type: "decision" }
+      bindings:
+        source:
+          from_input: "inputs_provided"
   - skill: "brief-compliance-check"
     prompt: "check-brief-compliance"
     step_type: "review"
@@ -145,6 +163,10 @@ execution:
       audience_profile: "General professional audience"
       compliance_brief: "No specific compliance requirements"
       compliance_depth: "Standard"
+    bindings:
+      source:
+        from_step: "Language Polish"
+        field: output
 ---
 
 ## PRD Generator Flow
