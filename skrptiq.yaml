@@ -2,7 +2,7 @@ id: "042554e3-0fbb-4465-9e0d-1afe6bf50181"
 name: "prd-generator-flow"
 display_name: "PRD Generator Flow"
 description: "Full product requirements document generation with stakeholder context, success metrics, and technical constraints"
-version: "1.1.31"
+version: "1.1.32"
 engine: ">=0.1.0"
 
 author:
@@ -99,7 +99,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-10-30T08:37:18.317Z"
+  scanned_at: "2026-11-01T19:25:23.059Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

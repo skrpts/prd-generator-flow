@@ -30,7 +30,6 @@ context_params:
     label: "User Personas"
     description: "The user personas — the people whose behaviour these metrics track."
     required: false
-    default_from_previous: true
 connections:
   - target: requirements-structuring
     type: derived_from
