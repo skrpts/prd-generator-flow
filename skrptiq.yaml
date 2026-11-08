@@ -2,7 +2,7 @@ id: "042554e3-0fbb-4465-9e0d-1afe6bf50181"
 name: "prd-generator-flow"
 display_name: "PRD Generator Flow"
 description: "Full product requirements document generation with stakeholder context, success metrics, and technical constraints"
-version: "1.1.32"
+version: "1.1.33"
 engine: ">=0.1.0"
 
 author:
@@ -50,8 +50,8 @@ dependencies:
     checksum: "sha256:7b5b27452bc32d02ce642720432bdaf5ef73c6d3f2b603af74c84c1fb17b16a2"
   - id: "a20ad2f8-a4ca-4c9f-a39b-5674f0773881"
     name: "input-gap-check"
-    version: 1.0.3
-    checksum: "sha256:e29d3c2091a058d0751079b8026038734d0412a7aec0938d72290815fe443bf7"
+    version: 1.0.4
+    checksum: "sha256:fd5eaa129563d4c18fa0f012d862d627809f480aa5a9f9c45b30d688d7ae110e"
   - id: "3db66b8b-8758-4503-a555-5330f3f9b3d9"
     name: "language-polish"
     version: 1.0.3
@@ -99,7 +99,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-11-01T19:25:23.059Z"
+  scanned_at: "2026-11-08T15:21:23.790Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
